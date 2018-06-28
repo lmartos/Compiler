@@ -163,6 +163,71 @@ public class CodeGenerator extends JavaForBeginnersBaseVisitor {
     }
 
     @Override
+    public Object visitIf_statement(JavaForBeginnersParser.If_statementContext context) {
+        Scope scope = (Scope) scopeTree.get(context);
+        String endIf = scope.getScopeName() + "_end";
+
+        for (int i = 0; i < context.condition_block().size(); i++) {
+            JavaForBeginnersParser.Condition_blockContext condition_blockContext = context.condition_block(i);
+            Scope scope1 = scope.getChildScopes().get(i);
+
+            Scope next = null;
+            if (context.function_block() != null) {
+                if (i + 1 <= context.condition_block().size()) {
+                    next = scope.getChildScopes().get(i + 1);
+                }
+            } else {
+                if (i + 1 <= context.condition_block().size() - 1) {
+                    next = scope.getChildScopes().get(i + 1);
+                }
+            }
+
+            jasminWriter.println("\t" + scope1.getScopeName() + ":");
+            visitChildren(condition_blockContext.boolean_expression());
+            if (next != null) {
+                jasminWriter.println(next.getScopeName());
+            } else {
+                jasminWriter.println(endIf);
+            }
+            visitChildren(condition_blockContext.function_block());
+
+            jasminWriter.println("\tgoto " + scope.getScopeName() + "_end");
+        }
+        if (context.function_block() != null) {
+            Scope lastScope = scope.getChildScopes().get(scope.getChildScopes().size() - 1);
+            jasminWriter.println("\t" + lastScope.getScopeName() + ":");
+            visitChildren(context.function_block());
+        }
+        jasminWriter.println("\t" + scope.getScopeName() + "_end:");
+        return null;
+    }
+
+    /**
+     * Visitor for comparison expression, only used  in if statements
+     */
+    @Override
+    public Object visitComparisonExpression(JavaForBeginnersParser.ComparisonExpressionContext context) {
+        Type type = (Type) visitChildren(context.leftExpression);
+        if (type == Type.FLOAT) {
+            jasminWriter.println("\tf2i");
+        }
+        Type type2 = (Type) visitChildren(context.rightExpression);
+        if (type2 == Type.FLOAT) {
+            jasminWriter.println("\tf2i");
+        }
+        if (context.op.getText().equals("<=")) {
+            jasminWriter.print("\tif_icmpgt ");
+        } else if (context.op.getText().equals(">=")) {
+            jasminWriter.print("\tif_icmplt ");
+        } else if (context.op.getText().equals("<")) {
+            jasminWriter.print("\tif_icmpge ");
+        } else if (context.op.getText().equals(">")) {
+            jasminWriter.print("\tif_icmple ");
+        }
+        return null;
+    }
+
+    @Override
     public Type visitAtomInt(JavaForBeginnersParser.AtomIntContext context) {
         Integer integer = new Integer(context.INT().getText());
         if (integer >= 0 && integer < 128) {
