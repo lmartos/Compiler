@@ -10,6 +10,7 @@ public class Scope {
      */
     private Scope parent;
     private LinkedHashMap<String, Symbol> variableTable = new LinkedHashMap<>();
+    private LinkedHashMap<String, FunctionScope> functieTable = new LinkedHashMap<>();
     private List<Scope> childScopes = new ArrayList<>();
     private String name;
     private int position;
@@ -41,6 +42,16 @@ public class Scope {
     public boolean addChildScope(Scope scope) {
         return childScopes.add(scope);
     }
+    public boolean addFunction(Function function) {
+        FunctionScope mt = findFunction(function.getFunctionName());
+        if (mt == null) {
+            FunctionScope functionScope = new FunctionScope(this, function.getFunctionName(), function);
+            functieTable.put(function.getFunctionName(), functionScope);
+            childScopes.add(functionScope);
+            return true;
+        }
+        return false;
+    }
 
     public boolean addVariable(Symbol variable) {
         Symbol s = findVariable(variable.getName());
@@ -65,7 +76,18 @@ public class Scope {
         }
     }
 
-
+    public FunctionScope findFunction(String name) {
+        FunctionScope mt = functieTable.get(name);
+        if (parent != null) {
+            if (mt != null) {
+                return mt;
+            } else {
+                return parent.findFunction(name);
+            }
+        } else {
+            return mt;
+        }
+    }
 
     /**
      * determine stack size by checking the current scope and child scopes
@@ -75,6 +97,9 @@ public class Scope {
         int max = 0;
         int temp = 0;
         for (Scope scope : childScopes) {
+            if (scope instanceof FunctionScope) {
+                continue;
+            }
 
             temp = scope.getLocalAmount();
             if (temp > max) {
@@ -91,6 +116,9 @@ public class Scope {
         int max = 0;
         int temp = 0;
         for (Scope scope : childScopes) {
+            if (scope instanceof FunctionScope) {
+                continue;
+            }
 
             temp = scope.getLocalStack();
             if (temp > max) {

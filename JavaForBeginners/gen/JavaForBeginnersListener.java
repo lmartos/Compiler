@@ -1,4 +1,4 @@
-// Generated from C:/Users/Nyuu-PC/Desktop/new/shell/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
+// Generated from C:/Users/Nyuu-PC/Desktop/newnew/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -57,6 +57,118 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 */
 	void exitAssign_value(JavaForBeginnersParser.Assign_valueContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#assign_value_by_method}.
+	 * @param ctx the parse tree
+	 */
+	void enterAssign_value_by_method(JavaForBeginnersParser.Assign_value_by_methodContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#assign_value_by_method}.
+	 * @param ctx the parse tree
+	 */
+	void exitAssign_value_by_method(JavaForBeginnersParser.Assign_value_by_methodContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterOperator(JavaForBeginnersParser.OperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitOperator(JavaForBeginnersParser.OperatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#operator_with_method}.
+	 * @param ctx the parse tree
+	 */
+	void enterOperator_with_method(JavaForBeginnersParser.Operator_with_methodContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#operator_with_method}.
+	 * @param ctx the parse tree
+	 */
+	void exitOperator_with_method(JavaForBeginnersParser.Operator_with_methodContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#read_statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterRead_statement(JavaForBeginnersParser.Read_statementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#read_statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitRead_statement(JavaForBeginnersParser.Read_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code printVar}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintVar(JavaForBeginnersParser.PrintVarContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code printVar}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintVar(JavaForBeginnersParser.PrintVarContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code printText}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintText(JavaForBeginnersParser.PrintTextContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code printText}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintText(JavaForBeginnersParser.PrintTextContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code printInt}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintInt(JavaForBeginnersParser.PrintIntContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code printInt}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintInt(JavaForBeginnersParser.PrintIntContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code printFloat}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintFloat(JavaForBeginnersParser.PrintFloatContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code printFloat}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintFloat(JavaForBeginnersParser.PrintFloatContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code printBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintBool(JavaForBeginnersParser.PrintBoolContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code printBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintBool(JavaForBeginnersParser.PrintBoolContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code printCalc}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintCalc(JavaForBeginnersParser.PrintCalcContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code printCalc}
+	 * labeled alternative in {@link JavaForBeginnersParser#print_to_console}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintCalc(JavaForBeginnersParser.PrintCalcContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link JavaForBeginnersParser#if_statement}.
 	 * @param ctx the parse tree
 	 */
@@ -66,6 +178,26 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitIf_statement(JavaForBeginnersParser.If_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#while_statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterWhile_statement(JavaForBeginnersParser.While_statementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#while_statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitWhile_statement(JavaForBeginnersParser.While_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#for_statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterFor_statement(JavaForBeginnersParser.For_statementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#for_statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitFor_statement(JavaForBeginnersParser.For_statementContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JavaForBeginnersParser#condition_block}.
 	 * @param ctx the parse tree
@@ -89,6 +221,66 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 */
 	void exitFunctionBlock(JavaForBeginnersParser.FunctionBlockContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunction(JavaForBeginnersParser.FunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunction(JavaForBeginnersParser.FunctionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#call_function}.
+	 * @param ctx the parse tree
+	 */
+	void enterCall_function(JavaForBeginnersParser.Call_functionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#call_function}.
+	 * @param ctx the parse tree
+	 */
+	void exitCall_function(JavaForBeginnersParser.Call_functionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#function_execution}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunction_execution(JavaForBeginnersParser.Function_executionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#function_execution}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunction_execution(JavaForBeginnersParser.Function_executionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#argument}.
+	 * @param ctx the parse tree
+	 */
+	void enterArgument(JavaForBeginnersParser.ArgumentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#argument}.
+	 * @param ctx the parse tree
+	 */
+	void exitArgument(JavaForBeginnersParser.ArgumentContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#argument_execution}.
+	 * @param ctx the parse tree
+	 */
+	void enterArgument_execution(JavaForBeginnersParser.Argument_executionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#argument_execution}.
+	 * @param ctx the parse tree
+	 */
+	void exitArgument_execution(JavaForBeginnersParser.Argument_executionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaForBeginnersParser#argument_type}.
+	 * @param ctx the parse tree
+	 */
+	void enterArgument_type(JavaForBeginnersParser.Argument_typeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaForBeginnersParser#argument_type}.
+	 * @param ctx the parse tree
+	 */
+	void exitArgument_type(JavaForBeginnersParser.Argument_typeContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code atomValueExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#variable_expression}.
 	 * @param ctx the parse tree
@@ -100,6 +292,30 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAtomValueExpression(JavaForBeginnersParser.AtomValueExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code assignCalculationExpression}
+	 * labeled alternative in {@link JavaForBeginnersParser#variable_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterAssignCalculationExpression(JavaForBeginnersParser.AssignCalculationExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code assignCalculationExpression}
+	 * labeled alternative in {@link JavaForBeginnersParser#variable_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitAssignCalculationExpression(JavaForBeginnersParser.AssignCalculationExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code minminPlusPlusExpression}
+	 * labeled alternative in {@link JavaForBeginnersParser#variable_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMinminPlusPlusExpression(JavaForBeginnersParser.MinminPlusPlusExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code minminPlusPlusExpression}
+	 * labeled alternative in {@link JavaForBeginnersParser#variable_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMinminPlusPlusExpression(JavaForBeginnersParser.MinminPlusPlusExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code plusMinExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#variable_expression}.
@@ -125,6 +341,18 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 */
 	void exitMultDivModExpression(JavaForBeginnersParser.MultDivModExpressionContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code notBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterNotBool(JavaForBeginnersParser.NotBoolContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code notBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitNotBool(JavaForBeginnersParser.NotBoolContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code atomCondExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
 	 * @param ctx the parse tree
@@ -136,6 +364,18 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAtomCondExpression(JavaForBeginnersParser.AtomCondExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code equalityExpression}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterEqualityExpression(JavaForBeginnersParser.EqualityExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code equalityExpression}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitEqualityExpression(JavaForBeginnersParser.EqualityExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code comparisonExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
