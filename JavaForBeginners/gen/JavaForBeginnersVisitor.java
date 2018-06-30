@@ -222,6 +222,13 @@ public interface JavaForBeginnersVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAtomCondExpression(JavaForBeginnersParser.AtomCondExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code boolOrbool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBoolOrbool(JavaForBeginnersParser.BoolOrboolContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code equalityExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
 	 * @param ctx the parse tree
@@ -235,6 +242,13 @@ public interface JavaForBeginnersVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitComparisonExpression(JavaForBeginnersParser.ComparisonExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code boolAndBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code atomexpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#atom}.

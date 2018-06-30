@@ -411,6 +411,18 @@ public class JavaForBeginnersBaseListener implements JavaForBeginnersListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterBoolOrbool(JavaForBeginnersParser.BoolOrboolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBoolOrbool(JavaForBeginnersParser.BoolOrboolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterEqualityExpression(JavaForBeginnersParser.EqualityExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -430,6 +442,18 @@ public class JavaForBeginnersBaseListener implements JavaForBeginnersListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitComparisonExpression(JavaForBeginnersParser.ComparisonExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

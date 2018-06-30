@@ -365,6 +365,18 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 */
 	void exitAtomCondExpression(JavaForBeginnersParser.AtomCondExpressionContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code boolOrbool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBoolOrbool(JavaForBeginnersParser.BoolOrboolContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code boolOrbool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBoolOrbool(JavaForBeginnersParser.BoolOrboolContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code equalityExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
 	 * @param ctx the parse tree
@@ -388,6 +400,18 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitComparisonExpression(JavaForBeginnersParser.ComparisonExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code boolAndBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code boolAndBool}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code atomexpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#atom}.

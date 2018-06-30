@@ -576,6 +576,62 @@ public class CodeGenerator extends JavaForBeginnersBaseVisitor {
         return null;
     }
 
+    @Override
+    public Object visitBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext context){
+        andBool++;
+        jasminWriter.println("\tand_bool_" + andBool  + ":");
+        andBool++;
+        visit(context.andLeftExpression);
+        jasminWriter.println("and_bool_" + andBool);
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\tgoto and_bool_" + (andBool + 1));
+        jasminWriter.println("\tand_bool_" + andBool  + ":");
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\ticonst_0");
+        jasminWriter.println("\tgoto and_bool_" + (andBool + 1) + "_end");
+        andBool++;
+        jasminWriter.println("\tand_bool_" + andBool  + ":");
+        andBool++;
+        visit(context.andRightExpression);
+        jasminWriter.println("and_bool_" + andBool);
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\tgoto and_bool_" + (andBool - 1) + "_end");
+        jasminWriter.println("\tand_bool_" + andBool  + ":");
+        jasminWriter.println("\ticonst_0");
+        jasminWriter.println("\tgoto and_bool_" + (andBool - 1) + "_end");
+        jasminWriter.println("\tand_bool_" + (andBool - 1) + "_end:");
+        jasminWriter.print("\tif_icmpne ");
+        andBool++;
+        return null;
+    }
+    
+
+    @Override
+    public Object visitBoolOrbool(JavaForBeginnersParser.BoolOrboolContext context){
+        orBool++;
+        jasminWriter.println("\tor_bool_" + orBool + ":");
+        orBool++;
+        visit(context.orLeftExpression);
+        jasminWriter.println("or_bool_" + orBool);
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\tgoto or_bool_" + (orBool - 1) + "_end");
+        jasminWriter.println("\tor_bool_" + orBool + ":");
+        visit(context.orRightExpression);
+        orBool++;
+        jasminWriter.println("or_bool_" + orBool);
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\tgoto or_bool_" + (orBool - 2) + "_end");
+        jasminWriter.println("\tor_bool_" + orBool + ":");
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\ticonst_0");
+        jasminWriter.println("\tgoto or_bool_" + (orBool - 2) + "_end");
+        jasminWriter.println("\tor_bool_" + (orBool - 2) + "_end:");
+        jasminWriter.print("\tif_icmpne ");
+        return null;
+    }
+
 
     /**
      * Visitor for printing variables

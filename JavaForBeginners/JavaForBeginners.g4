@@ -105,6 +105,8 @@ variable_expression: atom #atomValueExpression
 boolean_expression: atom #atomCondExpression
  | leftExpression=boolean_expression op=(SMALLEROREQUALS | GREATEROREQUALS | SMALLERTHAN | GREATERTHAN) rightExpression=boolean_expression #comparisonExpression
  | leftExpression=boolean_expression op=(EQUALS | NOTEQUALS) rightExpression=boolean_expression #equalityExpression
+ | orLeftExpression=boolean_expression OR orRightExpression=boolean_expression #boolOrbool
+ | andLeftExpression=boolean_expression AND andRightExpression=boolean_expression #boolAndBool
  | NOT boolean_expression #notBool;
 
 atom: OPEN_FUNC_OR_COND (boolean_expression | variable_expression) CLOSE_FUNC_OR_COND #atomexpression

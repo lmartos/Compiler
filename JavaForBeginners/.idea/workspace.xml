@@ -33,14 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CodeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="576" column="5" lean-forward="false" selection-start-line="576" selection-start-column="5" selection-end-line="576" selection-end-column="5" />
+            <state relative-caret-position="535">
+              <caret line="606" column="4" lean-forward="false" selection-start-line="606" selection-start-column="4" selection-end-line="606" selection-end-column="4" />
               <folding>
-                <element signature="e#34253#34254#0" expanded="true" />
-                <element signature="e#34288#34289#0" expanded="true" />
+                <element signature="e#36686#36687#0" expanded="true" />
+                <element signature="e#36721#36722#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scope.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Scope.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Scope.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="467">
@@ -78,8 +78,8 @@
       <file leaf-file-name="JavaForBeginners.g4" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaForBeginners.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="106" column="115" lean-forward="false" selection-start-line="106" selection-start-column="115" selection-end-line="106" selection-end-column="115" />
+            <state relative-caret-position="286">
+              <caret line="104" column="22" lean-forward="true" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
         <option value="$PROJECT_DIR$/examplePrograms/compiling/theLongestDecisions.jfb" />
         <option value="$PROJECT_DIR$/src/CodeChecker.java" />
         <option value="$PROJECT_DIR$/src/Model/Scope.java" />
-        <option value="$PROJECT_DIR$/src/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/JavaForBeginners.g4" />
+        <option value="$PROJECT_DIR$/src/CodeGenerator.java" />
       </list>
     </option>
   </component>
@@ -318,12 +318,12 @@
       <workItem from="1530196939379" duration="242000" />
       <workItem from="1530197200369" duration="489000" />
       <workItem from="1530025073897" duration="23000" />
-      <workItem from="1530025117555" duration="256000" />
+      <workItem from="1530025117555" duration="505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6608000" />
+    <option name="totallyTimeSpent" value="6857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -394,8 +394,8 @@
         <state relative-caret-position="2074">
           <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
           <folding>
-            <element signature="e#34253#34254#0" expanded="true" />
-            <element signature="e#34288#34289#0" expanded="true" />
+            <element signature="e#36686#36687#0" expanded="true" />
+            <element signature="e#36721#36722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -456,8 +456,8 @@
         <state relative-caret-position="255">
           <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding>
-            <element signature="e#34253#34254#0" expanded="true" />
-            <element signature="e#34288#34289#0" expanded="true" />
+            <element signature="e#36686#36687#0" expanded="true" />
+            <element signature="e#36721#36722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -535,8 +535,8 @@
         <state relative-caret-position="255">
           <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding>
-            <element signature="e#34253#34254#0" expanded="true" />
-            <element signature="e#34288#34289#0" expanded="true" />
+            <element signature="e#36686#36687#0" expanded="true" />
+            <element signature="e#36721#36722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,25 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="576" column="5" lean-forward="false" selection-start-line="576" selection-start-column="5" selection-end-line="576" selection-end-column="5" />
-          <folding>
-            <element signature="e#34253#34254#0" expanded="true" />
-            <element signature="e#34288#34289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaForBeginners.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="106" column="115" lean-forward="false" selection-start-line="106" selection-start-column="115" selection-end-line="106" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Scope.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -677,6 +658,25 @@
             <element signature="e#1207#1208#0" expanded="true" />
             <element signature="e#1255#1256#0" expanded="true" />
             <element signature="e#1300#1301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaForBeginners.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="104" column="22" lean-forward="true" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="606" column="4" lean-forward="false" selection-start-line="606" selection-start-column="4" selection-end-line="606" selection-end-column="4" />
+          <folding>
+            <element signature="e#36686#36687#0" expanded="true" />
+            <element signature="e#36721#36722#0" expanded="true" />
           </folding>
         </state>
       </provider>
