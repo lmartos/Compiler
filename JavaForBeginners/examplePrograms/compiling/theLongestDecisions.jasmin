@@ -1,0 +1,463 @@
+.class public theLongestDecisions
+.super java/lang/Object
+
+.method public <init>()V
+	.limit stack 5
+	.limit locals 1
+	aload_0
+	invokespecial java/lang/Object/<init>()V
+	return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+	.limit stack 5
+	.limit locals 1
+
+	aload 0
+
+	new theLongestDecisions
+	dup
+	invokespecial theLongestDecisions/<init>()V
+	invokespecial theLongestDecisions/main()V
+
+	return
+.end method
+
+.method public main()V
+	.limit stack 55
+	.limit locals 4
+
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "give me a whole positive number"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	iconst_0
+	istore 1
+	iload 1
+	new java/util/Scanner
+	dup
+	getstatic java/lang/System/in Ljava/io/InputStream;
+	invokespecial java/util/Scanner/<init>(Ljava/io/InputStream;)V
+	invokevirtual java/util/Scanner/nextInt()I
+	istore 1
+	iconst_1
+	istore 2
+	iconst_0
+	istore 3
+	if_statement_1:
+	and_bool_1:
+	iload 1
+	bipush 10
+	if_icmpge and_bool_2
+	iconst_1
+	goto and_bool_3
+	and_bool_2:
+	iconst_1
+	iconst_0
+	goto and_bool_3_end
+	and_bool_3:
+	iload 2
+	iconst_1
+	if_icmpne and_bool_4
+	iconst_1
+	goto and_bool_3_end
+	and_bool_4:
+	iconst_0
+	goto and_bool_3_end
+	and_bool_3_end:
+	if_icmpne if_1_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "You entered: "
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	goto if_1_end
+	if_1_end:
+	if_statement_2:
+	iload 2
+	iconst_1
+	if_icmpne if_2_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "this is always true"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_2_end
+	if_2_end:
+	if_statement_3:
+	and_bool_6:
+	and_bool_8:
+	and_bool_10:
+	and_bool_12:
+	and_bool_14:
+	and_bool_16:
+	and_bool_18:
+	and_bool_20:
+	iload 2
+	iconst_1
+	if_icmpne and_bool_21
+	iconst_1
+	goto and_bool_22
+	and_bool_21:
+	iconst_1
+	iconst_0
+	goto and_bool_22_end
+	and_bool_22:
+	iload 3
+	iconst_0
+	if_icmpne and_bool_23
+	iconst_1
+	goto and_bool_22_end
+	and_bool_23:
+	iconst_0
+	goto and_bool_22_end
+	and_bool_22_end:
+	if_icmpne and_bool_24
+	iconst_1
+	goto and_bool_25
+	and_bool_24:
+	iconst_1
+	iconst_0
+	goto and_bool_25_end
+	and_bool_25:
+	bipush 5
+	bipush 10
+	if_icmpge and_bool_26
+	iconst_1
+	goto and_bool_25_end
+	and_bool_26:
+	iconst_0
+	goto and_bool_25_end
+	and_bool_25_end:
+	if_icmpne and_bool_27
+	iconst_1
+	goto and_bool_28
+	and_bool_27:
+	iconst_1
+	iconst_0
+	goto and_bool_28_end
+	and_bool_28:
+	bipush 10
+	bipush 20
+	if_icmpge and_bool_29
+	iconst_1
+	goto and_bool_28_end
+	and_bool_29:
+	iconst_0
+	goto and_bool_28_end
+	and_bool_28_end:
+	if_icmpne and_bool_30
+	iconst_1
+	goto and_bool_31
+	and_bool_30:
+	iconst_1
+	iconst_0
+	goto and_bool_31_end
+	and_bool_31:
+	bipush 5
+	bipush 2
+	if_icmple and_bool_32
+	iconst_1
+	goto and_bool_31_end
+	and_bool_32:
+	iconst_0
+	goto and_bool_31_end
+	and_bool_31_end:
+	if_icmpne and_bool_33
+	iconst_1
+	goto and_bool_34
+	and_bool_33:
+	iconst_1
+	iconst_0
+	goto and_bool_34_end
+	and_bool_34:
+	bipush 5
+	bipush 5
+	if_icmplt and_bool_35
+	iconst_1
+	goto and_bool_34_end
+	and_bool_35:
+	iconst_0
+	goto and_bool_34_end
+	and_bool_34_end:
+	if_icmpne and_bool_36
+	iconst_1
+	goto and_bool_37
+	and_bool_36:
+	iconst_1
+	iconst_0
+	goto and_bool_37_end
+	and_bool_37:
+	bipush 5
+	bipush 4
+	if_icmplt and_bool_38
+	iconst_1
+	goto and_bool_37_end
+	and_bool_38:
+	iconst_0
+	goto and_bool_37_end
+	and_bool_37_end:
+	if_icmpne and_bool_39
+	iconst_1
+	goto and_bool_40
+	and_bool_39:
+	iconst_1
+	iconst_0
+	goto and_bool_40_end
+	and_bool_40:
+	bipush 5
+	bipush 5
+	if_icmpgt and_bool_41
+	iconst_1
+	goto and_bool_40_end
+	and_bool_41:
+	iconst_0
+	goto and_bool_40_end
+	and_bool_40_end:
+	if_icmpne and_bool_42
+	iconst_1
+	goto and_bool_43
+	and_bool_42:
+	iconst_1
+	iconst_0
+	goto and_bool_43_end
+	and_bool_43:
+	bipush 5
+	bipush 10
+	if_icmpgt and_bool_44
+	iconst_1
+	goto and_bool_43_end
+	and_bool_44:
+	iconst_0
+	goto and_bool_43_end
+	and_bool_43_end:
+	if_icmpne if_3_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "we made it!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_3_end
+	if_3_end:
+	if_statement_4:
+	or_bool_1:
+	iload 3
+	iconst_1
+	if_icmpne or_bool_2
+	iconst_1
+	iconst_1
+	goto or_bool_1_end
+	or_bool_2:
+	iload 2
+	iconst_1
+	if_icmpne or_bool_3
+	iconst_1
+	iconst_1
+	goto or_bool_1_end
+	or_bool_3:
+	iconst_1
+	iconst_0
+	goto or_bool_1_end
+	or_bool_1_end:
+	if_icmpne if_4_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "alwaysTrue is true so this works!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_4_end
+	if_4_end:
+	if_statement_5:
+	or_bool_4:
+	or_bool_6:
+	or_bool_8:
+	iload 3
+	iconst_1
+	if_icmpne or_bool_9
+	iconst_1
+	iconst_1
+	goto or_bool_8_end
+	or_bool_9:
+	iload 2
+	iconst_1
+	if_icmpne or_bool_10
+	iconst_1
+	iconst_1
+	goto or_bool_8_end
+	or_bool_10:
+	iconst_1
+	iconst_0
+	goto or_bool_8_end
+	or_bool_8_end:
+	if_icmpne or_bool_10
+	iconst_1
+	iconst_1
+	goto or_bool_9_end
+	or_bool_10:
+	bipush 5
+	bipush 4
+	if_icmpge or_bool_11
+	iconst_1
+	iconst_1
+	goto or_bool_9_end
+	or_bool_11:
+	iconst_1
+	iconst_0
+	goto or_bool_9_end
+	or_bool_9_end:
+	if_icmpne or_bool_11
+	iconst_1
+	iconst_1
+	goto or_bool_10_end
+	or_bool_11:
+	iload 2
+	iconst_0
+	if_icmpne or_bool_12
+	iconst_1
+	iconst_1
+	goto or_bool_10_end
+	or_bool_12:
+	iconst_1
+	iconst_0
+	goto or_bool_10_end
+	or_bool_10_end:
+	if_icmpne if_5_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "we can go on and on and on"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_5_end
+	if_5_end:
+	if_statement_6:
+	iload 2
+	iconst_0
+	if_icmpne if_statement_7
+	goto if_6_end
+	if_statement_7:
+	iload 2
+	iconst_0
+	if_icmpne if_statement_8
+	goto if_6_end
+	if_statement_8:
+	bipush 5
+	bipush 4
+	if_icmpge if_statement_9
+	goto if_6_end
+	if_statement_9:
+	iconst_1
+	iconst_1
+	if_icmpne if_6_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "do you need more ifs?"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_6_end
+	if_6_end:
+	if_statement_10:
+	not_bool_1:
+	iload 2
+	iconst_0
+	if_icmpne not_bool_2
+	iconst_1
+	iconst_0
+	goto not_bool_1_end
+	not_bool_2:
+	iconst_1
+	iconst_1
+	goto not_bool_1_end
+	not_bool_1_end:
+	if_icmpne if_7_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "we can do not too"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_7_end
+	if_7_end:
+	if_statement_11:
+	not_bool_3:
+	bipush 5
+	bipush 4
+	if_icmpge not_bool_4
+	iconst_1
+	iconst_0
+	goto not_bool_3_end
+	not_bool_4:
+	iconst_1
+	iconst_1
+	goto not_bool_3_end
+	not_bool_3_end:
+	if_icmpne if_8_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "or can we?"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_8_end
+	if_8_end:
+	if_statement_12:
+	not_bool_5:
+	and_bool_46:
+	and_bool_48:
+	iload 3
+	iconst_1
+	if_icmpne and_bool_49
+	iconst_1
+	goto and_bool_50
+	and_bool_49:
+	iconst_1
+	iconst_0
+	goto and_bool_50_end
+	and_bool_50:
+	iload 2
+	iconst_1
+	if_icmpne and_bool_51
+	iconst_1
+	goto and_bool_50_end
+	and_bool_51:
+	iconst_0
+	goto and_bool_50_end
+	and_bool_50_end:
+	if_icmpne and_bool_52
+	iconst_1
+	goto and_bool_53
+	and_bool_52:
+	iconst_1
+	iconst_0
+	goto and_bool_53_end
+	and_bool_53:
+	iload 2
+	iconst_1
+	if_icmpne and_bool_54
+	iconst_1
+	goto and_bool_53_end
+	and_bool_54:
+	iconst_0
+	goto and_bool_53_end
+	and_bool_53_end:
+	if_icmpne not_bool_6
+	iconst_1
+	iconst_0
+	goto not_bool_5_end
+	not_bool_6:
+	iconst_1
+	iconst_1
+	goto not_bool_5_end
+	not_bool_5_end:
+	if_icmpne if_9_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "yes we can!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_9_end
+	if_9_end:
+	if_statement_13:
+	not_bool_7:
+	iload 3
+	iconst_1
+	if_icmpne not_bool_8
+	iconst_1
+	iconst_0
+	goto not_bool_7_end
+	not_bool_8:
+	iconst_1
+	iconst_1
+	goto not_bool_7_end
+	not_bool_7_end:
+	if_icmpne if_10_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "singles too"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_10_end
+	if_10_end:
+
+	return
+.end method
+

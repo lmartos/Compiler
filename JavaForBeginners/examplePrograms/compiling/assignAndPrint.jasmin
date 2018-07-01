@@ -1,0 +1,107 @@
+.class public assignAndPrint
+.super java/lang/Object
+
+.method public <init>()V
+	.limit stack 5
+	.limit locals 1
+	aload_0
+	invokespecial java/lang/Object/<init>()V
+	return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+	.limit stack 5
+	.limit locals 1
+
+	aload 0
+
+	new assignAndPrint
+	dup
+	invokespecial assignAndPrint/<init>()V
+	invokespecial assignAndPrint/main()V
+
+	return
+.end method
+
+.method public main()V
+	.limit stack 54
+	.limit locals 7
+
+	ldc ""
+	astore 1
+	ldc "Hello my name is dave!"
+	astore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	aload 1
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	ldc "Hey! I'm Bob!"
+	astore 2
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	aload 2
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	bipush 14
+	istore 3
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 3
+	invokevirtual java/io/PrintStream/println(I)V
+	iconst_1
+	istore 4
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 4
+	invokevirtual java/io/PrintStream/println(Z)V
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	bipush 14
+	invokevirtual java/io/PrintStream/println(I)V
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "Hey there!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	iconst_0
+	iconst_1
+	if_icmpne printExpression_1_else
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iconst_1
+	invokevirtual java/io/PrintStream/println(Z)V
+	goto printExpression_1_end
+	printExpression_1_else:
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iconst_0
+	invokevirtual java/io/PrintStream/println(Z)V
+	goto printExpression_1_end
+	printExpression_1_end:
+	ldc ""
+	astore 5
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "Write something!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	aload 5
+	new java/util/Scanner
+	dup
+	getstatic java/lang/System/in Ljava/io/InputStream;
+	invokespecial java/util/Scanner/<init>(Ljava/io/InputStream;)V
+	invokevirtual java/util/Scanner/nextLine()Ljava/lang/String;
+	astore 5
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "You wrote: "
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	aload 5
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "Can we count to ten?"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	bipush 1
+	istore 6
+	for_loop_1:
+	iload 6
+	bipush 11
+	if_icmpge for_loop_1_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 6
+	invokevirtual java/io/PrintStream/println(I)V
+	iinc 6 1
+	goto for_loop_1
+	for_loop_1_end:
+
+	return
+.end method
+

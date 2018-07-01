@@ -1,0 +1,97 @@
+.class public calculations
+.super java/lang/Object
+
+.method public <init>()V
+	.limit stack 5
+	.limit locals 1
+	aload_0
+	invokespecial java/lang/Object/<init>()V
+	return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+	.limit stack 5
+	.limit locals 1
+
+	aload 0
+
+	new calculations
+	dup
+	invokespecial calculations/<init>()V
+	invokespecial calculations/main()V
+
+	return
+.end method
+
+.method public main()V
+	.limit stack 33
+	.limit locals 2
+
+	bipush 15
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iload 1
+	bipush 5
+	iadd
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iload 1
+	bipush 5
+	isub
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iload 1
+	bipush 2
+	imul
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iload 1
+	bipush 2
+	idiv
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iload 1
+	bipush 2
+	irem
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	bipush 15
+	bipush 4
+	isub
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	bipush 10
+	bipush 2
+	isub
+	bipush 2
+	idiv
+	istore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iinc 1 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+	iinc 1 -1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	iload 1
+	invokevirtual java/io/PrintStream/println(I)V
+
+	return
+.end method
+

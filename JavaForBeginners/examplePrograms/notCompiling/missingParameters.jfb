@@ -1,0 +1,9 @@
+nothing function repeatMe(text textToRepeat, whole_number repeatAmount){
+        whole_number index = 0;
+        while_this_is_true(index < repeatAmount){
+            index++;
+            display_this(textToRepeat);
+        }
+}
+
+repeatMe(10);

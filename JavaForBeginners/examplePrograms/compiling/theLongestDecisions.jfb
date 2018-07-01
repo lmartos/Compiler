@@ -1,0 +1,49 @@
+display_this("give me a whole positive number");
+whole_number userInput;
+userInput read_user_input_of_type(whole_number);
+condition alwaysTrue = true;
+condition alwaysFalse = false;
+
+if_this_is_true(userInput < 10 && alwaysTrue == true){
+    display_this("You entered: ");
+    display_this(userInput);
+}
+
+if_this_is_true(|alwaysTrue){
+    display_this("this is always true");
+}
+
+if_this_is_true(alwaysTrue == true && alwaysFalse == false && 5 < 10 && 10 < 20 && 5 > 2 && 5 >= 5 && 5 >= 4 && 5 <= 5 && 5 <= 10){
+    display_this("we made it!");
+}
+
+if_this_is_true(alwaysFalse == true || alwaysTrue == true){
+    display_this("alwaysTrue is true so this works!");
+}
+
+if_this_is_true(alwaysFalse == true || alwaysTrue == true || 5 < 4 || alwaysTrue == false){
+    display_this("we can go on and on and on");
+}
+
+if_this_is_true(alwaysTrue == false){
+}else_if_this_is_true(alwaysTrue == false){
+}else_if_this_is_true(5 < 4){
+}else_if_this_is_true(|true){
+ display_this("do you need more ifs?");
+}
+
+if_this_is_true(!alwaysTrue == false){
+    display_this("we can do not too");
+}
+
+if_this_is_true(!5 < 4){
+    display_this("or can we?");
+}
+
+if_this_is_true(!alwaysFalse == true && alwaysTrue == true && |alwaysTrue){
+    display_this("yes we can!");
+}
+
+if_this_is_true(!|alwaysFalse){
+    display_this("singles too");
+}

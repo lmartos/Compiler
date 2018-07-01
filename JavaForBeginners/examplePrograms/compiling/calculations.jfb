@@ -1,0 +1,28 @@
+whole_number start = 15;
+display_this(start);
+
+start += 5;
+display_this(start);
+start -= 5;
+display_this(start);
+
+start = start * 2;
+display_this(start);
+
+start = start / 2;
+display_this(start);
+
+start = start % 2;
+display_this(start);
+
+start = 15-4;
+display_this(start);
+
+start = (10-2) / 2;
+display_this(start);
+
+start++;
+display_this(start);
+start--;
+display_this(start);
+

@@ -1,4 +1,4 @@
-// Generated from C:/Users/Nyuu-PC/Desktop/newnew/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
+// Generated from C:/Users/Nyuu-PC/Desktop/CompilerLaurensMartos/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -387,6 +387,18 @@ public class JavaForBeginnersBaseListener implements JavaForBeginnersListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterInverseAtom(JavaForBeginnersParser.InverseAtomContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInverseAtom(JavaForBeginnersParser.InverseAtomContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterNotBool(JavaForBeginnersParser.NotBoolContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -430,6 +442,18 @@ public class JavaForBeginnersBaseListener implements JavaForBeginnersListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitEqualityExpression(JavaForBeginnersParser.EqualityExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAtomConditionalCheck(JavaForBeginnersParser.AtomConditionalCheckContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAtomConditionalCheck(JavaForBeginnersParser.AtomConditionalCheckContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

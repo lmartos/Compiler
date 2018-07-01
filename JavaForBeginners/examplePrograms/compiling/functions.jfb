@@ -1,0 +1,23 @@
+nothing function repeatMe(text textToRepeat, whole_number repeatAmount){
+        whole_number index = 0;
+        while_this_is_true(index < repeatAmount){
+            index++;
+            display_this(textToRepeat);
+        }
+}
+
+nothing function decisions(whole_number firstNum, whole_number secondNum){
+    if_this_is_true(firstNum < secondNum){
+        display_this(firstNum);
+        display_this("is smaller than");
+        display_this(secondNum);
+    }else_if_it_is_false{
+        display_this(firstNum);
+        display_this("is larger than");
+        display_this(secondNum);
+    }
+}
+repeatMe("is this joke still funny?",10);
+
+decisions(10, 15);
+

@@ -1,4 +1,4 @@
-// Generated from C:/Users/Nyuu-PC/Desktop/newnew/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
+// Generated from C:/Users/Nyuu-PC/Desktop/CompilerLaurensMartos/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -341,6 +341,18 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 */
 	void exitMultDivModExpression(JavaForBeginnersParser.MultDivModExpressionContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code inverseAtom}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterInverseAtom(JavaForBeginnersParser.InverseAtomContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code inverseAtom}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitInverseAtom(JavaForBeginnersParser.InverseAtomContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code notBool}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
 	 * @param ctx the parse tree
@@ -388,6 +400,18 @@ public interface JavaForBeginnersListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitEqualityExpression(JavaForBeginnersParser.EqualityExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code atomConditionalCheck}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterAtomConditionalCheck(JavaForBeginnersParser.AtomConditionalCheckContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code atomConditionalCheck}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitAtomConditionalCheck(JavaForBeginnersParser.AtomConditionalCheckContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code comparisonExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.

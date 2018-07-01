@@ -108,7 +108,7 @@ public class CodeGenerator extends JavaForBeginnersBaseVisitor {
 
     /**
      * Visitor -- and ++. will load the given variable and either increase or decrease it by 1 and then store it.
-     **/
+    **/
     @Override
     public Object visitMinminPlusPlusExpression(JavaForBeginnersParser.MinminPlusPlusExpressionContext context) {
         Symbol s = (Symbol) variableAndFunctionTree.get(context);
@@ -577,6 +577,35 @@ public class CodeGenerator extends JavaForBeginnersBaseVisitor {
     }
 
     @Override
+    public Object visitAtomConditionalCheck(JavaForBeginnersParser.AtomConditionalCheckContext context){
+        visitChildren(context);
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.print("\tif_icmpne ");
+        return Type.BOOL;
+    }
+
+    /**
+     * not statement for single boolean check without logical operator
+     */
+    @Override
+    public Object visitInverseAtom(JavaForBeginnersParser.InverseAtomContext context){
+        notBool++;
+        jasminWriter.println("\tnot_bool_" + notBool  + ":");
+        visit(context.boolean_expression());
+        notBool++;
+        jasminWriter.println("not_bool_" + notBool);
+        jasminWriter.println("\ticonst_0");
+        jasminWriter.println("\tgoto not_bool_" + (notBool - 1) + "_end");
+        jasminWriter.println("\tnot_bool_" + notBool  + ":");
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.println("\tgoto not_bool_" + (notBool - 1) + "_end");
+        jasminWriter.println("\tnot_bool_" + (notBool - 1) + "_end:");
+        jasminWriter.println("\ticonst_1");
+        jasminWriter.print("\tif_icmpne ");
+        return null;
+    }
+
+    @Override
     public Object visitBoolAndBool(JavaForBeginnersParser.BoolAndBoolContext context){
         andBool++;
         jasminWriter.println("\tand_bool_" + andBool  + ":");
@@ -604,7 +633,6 @@ public class CodeGenerator extends JavaForBeginnersBaseVisitor {
         andBool++;
         return null;
     }
-    
 
     @Override
     public Object visitBoolOrbool(JavaForBeginnersParser.BoolOrboolContext context){
@@ -631,7 +659,7 @@ public class CodeGenerator extends JavaForBeginnersBaseVisitor {
         jasminWriter.print("\tif_icmpne ");
         return null;
     }
-
+    
 
     /**
      * Visitor for printing variables

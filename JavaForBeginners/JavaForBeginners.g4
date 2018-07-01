@@ -104,6 +104,8 @@ variable_expression: atom #atomValueExpression
 
 boolean_expression: atom #atomCondExpression
  | leftExpression=boolean_expression op=(SMALLEROREQUALS | GREATEROREQUALS | SMALLERTHAN | GREATERTHAN) rightExpression=boolean_expression #comparisonExpression
+ | NOT EXTREME boolean_expression #inverseAtom
+ | ABSOLUTE boolean_expression #atomConditionalCheck
  | leftExpression=boolean_expression op=(EQUALS | NOTEQUALS) rightExpression=boolean_expression #equalityExpression
  | orLeftExpression=boolean_expression OR orRightExpression=boolean_expression #boolOrbool
  | andLeftExpression=boolean_expression AND andRightExpression=boolean_expression #boolAndBool

@@ -1,0 +1,40 @@
+nothing function writeWords(text textToWrite, whole_number amountToWrite){
+    for_this_duration(whole_number index = 0; index < amountToWrite; index++){
+        display_this(textToWrite);
+    }
+}
+
+text daveIntro;
+daveIntro = "Hello I'm Dave!";
+display_this(daveIntro);
+
+text userName;
+
+display_this("\nWhat is your name?");
+userName read_user_input_of_type(text);
+
+display_this("\nYour name is ");
+display_this(userName);
+
+whole_number userAge;
+display_this("\nHow old are you?");
+userAge read_user_input_of_type(whole_number);
+
+if_this_is_true(userAge < 18){
+    display_this("\nWhat are you doing here?");
+}else_if_this_is_true(userAge < 30){
+    display_this("\nWelcome to the world of wonders.");
+}else_if_it_is_false{
+    display_this("\nDon't lie about your age!");
+}
+
+writeWords("Is this joke still funny?",10);
+
+condition bool = true;
+condition bool2 = false;
+
+if_this_is_true(bool2 == false && bool == true && bool2 == false && 5 > 4){
+    display_this("it works!");
+}
+
+display_this(15 - 4);

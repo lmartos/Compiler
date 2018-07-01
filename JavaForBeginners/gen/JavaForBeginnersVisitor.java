@@ -1,4 +1,4 @@
-// Generated from C:/Users/Nyuu-PC/Desktop/newnew/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
+// Generated from C:/Users/Nyuu-PC/Desktop/CompilerLaurensMartos/JavaForBeginners\JavaForBeginners.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -208,6 +208,13 @@ public interface JavaForBeginnersVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMultDivModExpression(JavaForBeginnersParser.MultDivModExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code inverseAtom}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInverseAtom(JavaForBeginnersParser.InverseAtomContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code notBool}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
 	 * @param ctx the parse tree
@@ -235,6 +242,13 @@ public interface JavaForBeginnersVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitEqualityExpression(JavaForBeginnersParser.EqualityExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code atomConditionalCheck}
+	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAtomConditionalCheck(JavaForBeginnersParser.AtomConditionalCheckContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code comparisonExpression}
 	 * labeled alternative in {@link JavaForBeginnersParser#boolean_expression}.

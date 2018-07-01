@@ -1,0 +1,35 @@
+#assigning value later
+text daveIntro;
+
+daveIntro = "Hello my name is dave!";
+display_this(daveIntro);
+
+#directly assigning a value
+text bobIntro = "Hey! I'm Bob!";
+display_this(bobIntro);
+
+#assigning numbers
+whole_number fourteen = 14;
+display_this(fourteen);
+
+#assigning booleans
+condition alwaysTrue = true;
+display_this(alwaysTrue);
+
+#displaying direct input
+display_this(12);
+display_this("Hey there!");
+display_this(|false);
+
+#ask for user input
+text userInput;
+display_this("Write something!");
+userInput read_user_input_of_type(text);
+display_this("You wrote: ");
+display_this(userInput);
+
+#for loop
+display_this("Can we count to ten?");
+for_this_duration(whole_number index = 1; index < 11; index++){
+    display_this(index);
+}

@@ -1,0 +1,187 @@
+.class public allTogetherNow
+.super java/lang/Object
+
+.method public <init>()V
+	.limit stack 5
+	.limit locals 1
+	aload_0
+	invokespecial java/lang/Object/<init>()V
+	return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+	.limit stack 5
+	.limit locals 1
+
+	aload 0
+
+	new allTogetherNow
+	dup
+	invokespecial allTogetherNow/<init>()V
+	invokespecial allTogetherNow/main()V
+
+	return
+.end method
+
+.method public main()V
+	.limit stack 71
+	.limit locals 6
+
+	ldc ""
+	astore 1
+	ldc "Hello I'm Dave!"
+	astore 1
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	aload 1
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	ldc ""
+	astore 2
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "\nWhat is your name?"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	aload 2
+	new java/util/Scanner
+	dup
+	getstatic java/lang/System/in Ljava/io/InputStream;
+	invokespecial java/util/Scanner/<init>(Ljava/io/InputStream;)V
+	invokevirtual java/util/Scanner/nextLine()Ljava/lang/String;
+	astore 2
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "\nYour name is "
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	aload 2
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	iconst_0
+	istore 3
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "\nHow old are you?"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	iload 3
+	new java/util/Scanner
+	dup
+	getstatic java/lang/System/in Ljava/io/InputStream;
+	invokespecial java/util/Scanner/<init>(Ljava/io/InputStream;)V
+	invokevirtual java/util/Scanner/nextInt()I
+	istore 3
+	if_statement_1:
+	iload 3
+	bipush 18
+	if_icmpge if_statement_2
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "\nWhat are you doing here?"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_1_end
+	if_statement_2:
+	iload 3
+	bipush 30
+	if_icmpge if_statement_3
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "\nWelcome to the world of wonders."
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_1_end
+	if_statement_3:
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "\nDon't lie about your age!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	if_1_end:
+	aload 0
+	ldc "Is this joke still funny?"
+	bipush 10
+	invokevirtual allTogetherNow/writeWords(Ljava/lang/String;I)V
+	iconst_1
+	istore 4
+	iconst_0
+	istore 5
+	if_statement_4:
+	and_bool_1:
+	and_bool_3:
+	and_bool_5:
+	iload 5
+	iconst_0
+	if_icmpne and_bool_6
+	iconst_1
+	goto and_bool_7
+	and_bool_6:
+	iconst_1
+	iconst_0
+	goto and_bool_7_end
+	and_bool_7:
+	iload 4
+	iconst_1
+	if_icmpne and_bool_8
+	iconst_1
+	goto and_bool_7_end
+	and_bool_8:
+	iconst_0
+	goto and_bool_7_end
+	and_bool_7_end:
+	if_icmpne and_bool_9
+	iconst_1
+	goto and_bool_10
+	and_bool_9:
+	iconst_1
+	iconst_0
+	goto and_bool_10_end
+	and_bool_10:
+	iload 5
+	iconst_0
+	if_icmpne and_bool_11
+	iconst_1
+	goto and_bool_10_end
+	and_bool_11:
+	iconst_0
+	goto and_bool_10_end
+	and_bool_10_end:
+	if_icmpne and_bool_12
+	iconst_1
+	goto and_bool_13
+	and_bool_12:
+	iconst_1
+	iconst_0
+	goto and_bool_13_end
+	and_bool_13:
+	bipush 5
+	bipush 4
+	if_icmple and_bool_14
+	iconst_1
+	goto and_bool_13_end
+	and_bool_14:
+	iconst_0
+	goto and_bool_13_end
+	and_bool_13_end:
+	if_icmpne if_2_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc "it works!"
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	goto if_2_end
+	if_2_end:
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	bipush 15
+	bipush 4
+	isub
+	invokevirtual java/io/PrintStream/println(I)V
+
+	return
+.end method
+
+.method public writeWords(Ljava/lang/String;I)V
+	.limit stack 3
+	.limit locals 4
+
+	bipush 0
+	istore 3
+	for_loop_1:
+	iload 3
+	iload 2
+	if_icmpge for_loop_1_end
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	aload 1
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	iinc 3 1
+	goto for_loop_1
+	for_loop_1_end:
+
+	return
+.end method
+
